@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/styleLogin.css">
+    <link rel="shortcut icon" href="../img/gamerweek2.PNG">
+    <title>Login</title>
 </head>
 <body>
     
+    <table>
+        <tr>
+            <header>
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../html/coleccion.html">Colección de juegos</a></li>
+                        <li><a href="../html/sponsor.html">Principales Sponsor</a></li>
+                        <li><a href="../html/contactanos.html">Contactanos</a></li>
+                        <img src="../img/gamerweek.PNG" class="logo">
+                        <li class="derecha"><a href="../html/login.html">Login</a></li>
+                        <li><a href="../html/Register.html">Register</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </tr>
+    </table>
+
+<section class="form">
+    <div class="correo">
+        <label for="correo">Correo Electrónico</label>
+        <input type="text" id="correo" name="correo" value="">
+    </div>
+    <div class="contra">
+        <label for="contra">Contraseña</label>
+        <input type="text" id="contra" name="contra" maxlength="14" minlength="4" value="">
+    </div>
+    <div class="boton">
+        <input type="submit" value="logear" id="btnEnviar">
+    </div>
+</section>
+<script src="../js/login.js"></script>
 </body>
 </html>
