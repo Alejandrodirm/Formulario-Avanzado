@@ -2,6 +2,36 @@
     margin: 0px;
     padding: 0px;
 }
+
+.navegacion{
+    
+	width: 100%;
+    background: black;
+    color: white;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+  
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
 body {
     background-image: url("../img/back.jpg");
     opacity: 90%;
@@ -11,4 +41,41 @@ body {
     background-position: center;
     background-size: 100%;
     position: relative;
+}
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+  }
+  
+  .form button {
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+  }
+  label {
+    margin-left: 200px;
+  }
+
+header {
+    background-color: black;
+}
+.derecha {
+    margin-left: 34%;
+}
+.logo {
+    width: 17%;
+    height: 5%;
+    margin-left: 209px;
 }
