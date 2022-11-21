@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navegacion{
+    
+	width: 100%;
+    background: black;
+    color: white;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+  
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+    color: aliceblue;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+body {
+    background-color: lightslategrey;
+    opacity: 90%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+}
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+  }
+
+  .form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+  }
+  
+  .form button {
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+  }
+  label {
+    margin-left: 200px;
+  }
+
+header {
+    background-color: black;
+}
+.derecha {
+    margin-left: 34%;
+}
+.logo {
+    width: 17%;
+    height: 5%;
+    margin-left: 209px;
+}
