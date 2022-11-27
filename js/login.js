@@ -1,7 +1,16 @@
-//funcion validar correo
-function esCorreoValido() {
-    var correo = document.getElementById("correo").value;
-    var correoPattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
-    if (!correo.match(correoPattern)) {
+function login(){
+
+    let correo = document.getElementById("correo").value;
+    let contra = document.getElementById("contra").value;
+    if(correo!=""&contra!=""){
+        if(correo.localeCompare(this.correo)|contra.localeCompare(this.contra)){
+            location.href="coleccion.html"
+        }else{
+            alert("te has equivocado en el correo")
+        }
+    }else{
+        alert("campos vacios");
     }
+
 }
+

@@ -12,54 +12,49 @@
 
 <body>
 
-        <table>
-            <tr>
-                <header>
-                    <nav class="navegacion">
-                        <ul class="menu">
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="../html/coleccion.html">Colección de juegos</a></li>
-                            <li><a href="../html/contactanos.html">Contactanos</a></li>
-                            <img src="../img/gamerweek.PNG" class="logo">
-                            <li class="derecha"><a href="../html/login.html">Login</a></li>
-                            <li><a href="../html/Register.html">Register</a></li>
-                        </ul>
-                    </nav>
-                </header>
-            </tr>
-        </table>
-    
+    <table>
+        <tr>
+            <header>
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../html/coleccion.html">Colección de juegos</a></li>
+                        <img src="../img/gamerweek.PNG" class="logo">
+                        <li class="derecha"><a href="../html/login.html">Login</a></li>
+                        <li><a href="../html/Register.html">Register</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </tr>
+    </table>
+
     <section class="form">
-        <div class="correo">
-            <label for="correo">Correo Electrónico</label>
-            <input type="text" id="correo" name="correo" value="">
-        </div>
+        <form id="registro">
+            <div class="nombre">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="name" maxlength="20" minlength="2" value="" onchange="esNombreValido()" required>
+                <span id="nombreerr"></span>
+            </div>
 
-        <div class="nombre">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="name" maxlength="20" minlength="2" value="">
-        </div>
-
-        <div class="apellidos">
-            <label for="Apellidos">Apellidos</label>
-            <input type="text" id="apellidos" name="apellidos" value="" maxlength="24" minlength="3">
-        </div>
-
-        <div class="contra">
-            <label for="contra">Contraseña</label>
-            <input type="text" id="contra" name="contra" maxlength="14" minlength="4" value="">
-        </div>
-        <div>
-            <label for="iban">iban</label>
-            <input type="text" id="iban" name="iban" value="">
-        </div>
-        <div>
-            <label for="swift">swift</label>
-            <input type="text" id="swift" name="swift" value="" required>
-        </div>
-        <div class="boton">
-            <input type="submit" value="Registrarse" id="btnEnviar">
-        </div>
+            <div class="apellidos">
+                <label for="Apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" value="" maxlength="24" minlength="3"  onchange="esApellidoValido(), validar()" required>
+                <span id="apellidoserr"></span>
+            </div>
+            <div class="correo">
+                <label for="correo">Correo Electrónico</label>
+                <input type="text" id="correo" name="correo" value="" onchange="esFechaValido()" required>
+                <span id="correoerr"></span>
+            </div>
+            <div class="contra">
+                <label for="contra">Contraseña</label>
+                <input type="text" id="contra" name="contra" maxlength="14" minlength="4" value="" onchange="esContraValido()" required>
+                <span id="contraerr"></span>
+            </div>
+            <div class="boton">
+                <input type="submit" value="Registrarse" id="btnEnviar" class="button" onMousemove="validar()">
+            </div>
+        </form>
     </section>
     <script src="../js/register.js"></script>
 </body>
