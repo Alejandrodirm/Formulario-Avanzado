@@ -37,13 +37,11 @@ label,input,.titulo{
 .navegacion ul{
 	list-style: none;
 }
-
 .menu > li{
   
 	position: relative;
 	display: inline-block;
 }
-
 .menu > li > a{
 	display: block;
 	padding: 15px 20px;
