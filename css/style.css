@@ -32,6 +32,7 @@ label,input,.titulo{
 	width: 100%;
     background: black;
     color: white;
+    margin-top: -50px;
 }
 
 .navegacion ul{
@@ -62,11 +63,14 @@ label,input,.titulo{
     width: 20%;
     margin-top: 84px;
 }
-.derecha {
-    margin-left: 34%;
-}
+
 .logo2 {
-    width: 17%;
-    height: 5%;
-    margin-left: 209px;
+    width: 34%;
+    height: 0%;
+    margin-left: 258px;
+    margin-top: 6px;
+}
+#carouselExampleIndicators {
+    margin-left: 20%;
+    margin-right: 20%;
 }
